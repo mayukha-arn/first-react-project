@@ -49,3 +49,41 @@ __Procedure:__
 -  for more detailed instructions, refer to: https://github.com/gitname/react-gh-pages/blob/master/README.md
 
 # Essential JavaScript
+
+*Normal Function*
+   > function DoSomething(){
+   > 
+   > }
+
+*Arrow Function*
+   - to define can use keywords "const", "let" or "var" (const is most standard)
+   - can return anything, for example: html (specific to React)
+   > const DoSomething = () => {
+   >   return <div> </div> 
+   > }
+
+*Exporting Functions*
+   - export normal
+      > **export default** function DoSomething(){
+      > 
+      > }
+   - export arrow
+      > **export** const DoSomething = () => {
+      >
+      > }
+
+*Anonymous Function*
+   - functions can normally be written like this:
+        > <button onClick={}>
+        >
+        > </button>
+   - but anonymous functions are written like this (function to be executed inside curly brackets:
+        > <button onClick={() => {
+        > 
+        > console.log("hello world")
+        > 
+        > }>
+        >
+        > </button>
+
+
