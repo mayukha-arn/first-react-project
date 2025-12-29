@@ -59,7 +59,9 @@ __Procedure:__
    - to define can use keywords "const", "let" or "var" (const is most standard)
    - can return anything, for example: html (specific to React)
    > const DoSomething = () => {
-   >   return <div> </div> 
+   >    
+      > return <div> </div>
+   >    
    > }
 
 *Exporting Functions*
@@ -80,10 +82,45 @@ __Procedure:__
    - but anonymous functions are written like this (function to be executed inside curly brackets:
         > <button onClick={() => {
         > 
-        > console.log("hello world")
+           > console.log("hello world")
         > 
         > }>
         >
         > </button>
+
+*Ternary Operators*
+- React allows you to write JS inside JSX, a modified version of HTML that allows you to write conditionals and JavaScript
+- try to keep lines of code minimal to prevent messiness, __*ternary operators*__ may be helpful here
+- without a ternary operator: 
+   > let age = 10;
+   >
+   > let name = "Pedro";
+   >
+   > if (age > 10) {
+   >
+      > name = "Pedro"
+   >
+   > } else {
+   >
+      > name = "Jack"
+   >
+   > }
+- with a ternary operator:
+   > let age = 16;
+   >
+   > let name = age > 10 && "Pedro"; //if age > 10, name = "Pedro"
+- ternary operators:
+   - && (and)
+   - || (or)
+   - let name = age > 10 __?__ "Pedro" __:__ "Jack"; (if else)
+-  commonly used example:
+   > const Component = () => {
+   >
+      > return age > 10 ? <div> Pedro </div> : <div> Jack </div>
+   >
+   > };
+
+*Objects*
+- 
 
 
